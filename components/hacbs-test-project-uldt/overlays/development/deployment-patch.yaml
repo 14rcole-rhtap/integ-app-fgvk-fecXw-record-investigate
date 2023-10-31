@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-uldt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rycole-appstudio/integration1-pmgz-tenant/integ-app-fgvk/hacbs-test-project-uldt@sha256:1a620c8fd9096f9b8df593bfe655beccce79db7b1ca9d3c60c3e17c1d7ba0ce2
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
